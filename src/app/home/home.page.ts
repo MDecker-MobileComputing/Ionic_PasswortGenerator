@@ -1,3 +1,5 @@
+import { Clipboard } from '@capacitor/clipboard';
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -16,7 +18,6 @@ export class HomePage {
   /** Erzeugtes Passwort, an TextArea gebunden. */
   public passwort : string = "";
 
-  constructor() {}
 
   /**
    * Event-Handler für Button "Passwort erzeugen".
@@ -80,6 +81,7 @@ export class HomePage {
    */
   public async onKopieren() {
 
+    await Clipboard.write({ string: this.passwort });
   }
 
   /**
