@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public zeichenvorrat : string = "kleinundgrossbuchstaben";
+
+  public sicherheitslevel : string = "mittel";
+
   constructor() {}
 
 }
