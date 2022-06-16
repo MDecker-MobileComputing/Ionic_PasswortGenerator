@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package de.mide.ionic.passwortgenerator;
 
 import com.getcapacitor.BridgeActivity;
 

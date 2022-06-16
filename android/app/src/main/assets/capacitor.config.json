@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "PasswortGenerator",
+	"appId": "de.mide.ionic.passwortgenerator",
+	"appName": "Passwort-Generator",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }

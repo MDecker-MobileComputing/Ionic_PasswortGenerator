@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'PasswortGenerator',
+  appId: 'de.mide.ionic.passwortgenerator',
+  appName: 'Passwort-Generator',
   webDir: 'www',
   bundledWebRuntime: false
 };
