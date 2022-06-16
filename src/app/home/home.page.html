@@ -11,35 +11,36 @@
     <ion-item>
       <ion-label>Zeichenvorrat</ion-label>
       <ion-select [(ngModel)]="zeichenvorrat">
-        <ion-select-option value="zahlen">1,2,3, ...</ion-select-option>
-        <ion-select-option value="kleinbuchstaben">a,b,c, ...</ion-select-option>
-        <ion-select-option value="kleinundgrossbuchstaben">A,a,B,b, ...</ion-select-option>
-        <ion-select-option value="buchstabenundzahlen">1,2,...,A,a,B,b, ...</ion-select-option>
+        <ion-select-option value="zahlen"                  >1,2,3, ...</ion-select-option>
+        <ion-select-option value="kleinbuchstaben"         >a,b,c, ...</ion-select-option>
+        <ion-select-option value="kleinundgrossbuchstaben" >A,a,B,b, ...</ion-select-option>
+        <ion-select-option value="buchstabenundzahlen"     >1,2,...,A,a,B,b, ...</ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
       <ion-label>Sicherheit-Level</ion-label>
       <ion-select [(ngModel)]="sicherheitslevel">
-        <ion-select-option value="schwach">Schwach</ion-select-option>
-        <ion-select-option value="mittel">Mittel</ion-select-option>
-        <ion-select-option value="stark">Stark</ion-select-option>
-        <ion-select-option value="sehrstark">Sehr stark</ion-select-option>
+        <ion-select-option value="schwach"   >Schwach</ion-select-option>
+        <ion-select-option value="mittel"    >Mittel</ion-select-option>
+        <ion-select-option value="stark"     >Stark</ion-select-option>
+        <ion-select-option value="sehrstark" >Sehr stark</ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
-      <ion-button color="primary">Passwort erzeugen</ion-button>
+      <ion-button color="primary" (click)="onPasswortErzeugen()">Passwort erzeugen</ion-button>
     </ion-item>
 
     <ion-item>
       <ion-textarea readonly
+                    [(ngModel)]="passwort"
                     placeholder="Hier wird das erzeugte Passwort angezeigt">
       </ion-textarea>
     </ion-item>
 
     <ion-item>
-      <ion-button color="secondary">In Zwischenablage kopieren</ion-button>
+      <ion-button color="secondary" (click)="onKopieren()">In Zwischenablage kopieren</ion-button>
     </ion-item>
 
   </ion-list>
