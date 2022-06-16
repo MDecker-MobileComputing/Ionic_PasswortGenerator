@@ -1,6 +1,4 @@
-import { Clipboard } from '@capacitor/clipboard';
 import { Component } from '@angular/core';
-
 
 @Component({
   selector: 'app-home',
@@ -76,13 +74,6 @@ export class HomePage {
     this.passwortErzeugen(zeichenvorrat, passwortLaenge);
   }
 
-  /**
-   * Event-Handler für Button "In Zwischenablage kopieren".
-   */
-  public async onKopieren() {
-
-    await Clipboard.write({ string: this.passwort });
-  }
 
   /**
    * Eigentliche Erzeugung des Passworts.
